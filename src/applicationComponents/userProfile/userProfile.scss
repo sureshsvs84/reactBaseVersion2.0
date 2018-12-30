@@ -1,0 +1,100 @@
+.rightNavIcon{ position: absolute;
+top: 28px;
+right: 5px;
+z-index: 997;
+}
+
+.profilePanel,.profilePanelOpen{  
+  
+   width: 350px;
+   position: fixed;
+   background-color:#ffff;
+   height: 100%;
+   right: -400px;
+   z-index: 100;
+   top: 0px;
+   opacity:0.3;
+   padding: 0rem;
+   transition: all 0.8s ease;
+
+   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+   overflow-y: auto;
+    .profileImg{
+        text-align: center;
+        font-weight: 400;
+        border-bottom: 1px solid #d6d5d5cc;
+        padding-bottom: 1rem;
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 100px;
+            box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        }
+        i.right{
+            position: fixed;
+            z-index: 15;
+            right: 200px;
+            right: -400px;
+            background-color: #212b36;
+            width: 30px;
+            height: 30px;
+            border-radius: 50px;
+            line-height: 30px;
+            font-size: 18px;
+            color: #fff;
+            top: 7px;
+            transition: all 0.8s ease;
+        }
+    }
+    ul.collapsible{
+        float: left;
+        width: 100%;       
+        margin:0;
+        margin-top: -1px;
+.collapsible-body{
+    padding: 0px!important;
+    .input-field {
+        position: relative;
+        margin-top: 0.9rem;
+        input{
+            margin-bottom: 0.5rem!important;
+            }
+            label{
+                font-size:0.89rem;
+            }
+    }
+}
+    }
+}
+.profilePanelOpen{
+    right:0;
+   opacity:1;
+   .profileImg{
+    i.right{
+        right: 13px;
+        transition: all 0.8s ease;
+    }
+   }
+}
+.profile-overlay{
+    width: calc(100% - 350px);
+    background-color: #000;
+    height: 100%;      
+    z-index: 9;
+    position: fixed;
+    top: 0px;
+    -webkit-animation: 0.5s ease 0s normal forwards 1 fadein;
+    animation: 0.5s ease 0s normal forwards 1 fadein;
+    left: 0;
+}
+@keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:0.5; }
+}
+
+@-webkit-keyframes fadein{
+    0% { opacity:0; }
+    66% { opacity:0; }
+    100% { opacity:0.5; }
+}

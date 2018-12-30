@@ -1,0 +1,18 @@
+.quickPeriodicity {
+    margin-bottom: 0px;  
+    .dataDropdown {
+        .col.input-field{
+            margin-top:0!important;
+            width:100%;
+            .select-wrapper{
+                input.select-dropdown{
+                    margin: 0 0 0px 0!important;
+                }
+            } 
+        }
+        span {
+            font-size: 13px;
+            padding-left: .8rem;
+        }
+    }
+}

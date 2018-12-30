@@ -1,0 +1,124 @@
+/* General Overlay */
+
+#overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 120vh;
+    background-color: transparent;
+    z-index: 996;
+    will-change: opacity;
+}
+
+body {
+    header {
+        nav {
+            .showDropDown {
+                white-space: nowrap;
+                opacity: 1;
+                right: 20px;
+                position: absolute;
+                top: 64px;
+                display: block;
+            }
+            li.attraction{
+                width:240px;
+                .multiple-select-dropdown{
+                    width: 350px!important;
+                     li > a, li > span {
+                        font-size: 0.9rem!important;
+                        color:$secondary-color;
+                        display: block;
+                        line-height: 22px;
+                        padding: 14px 16px;
+                        [type="checkbox"] + label {
+                            top: -9px!important;
+                            left: 5px;
+                            height: 18px;
+                        }
+                    }
+                }
+            }
+            
+        }
+    }
+    #main {
+        .wrapper {
+            aside#left-sidebar-nav {
+                .side-nav.slideOut {
+                    transform: translateX(0px);
+                }
+                #sidenav-overlay {
+                    opacity: 0.5;
+                    background-color: black;
+                }
+            }
+            aside#right-sidebar-nav {
+                .side-nav.right-navout {
+                    transform: translateX(0px);
+                    z-index: 1000;
+                }
+                #rightSide-overlay {
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    right: 0;
+                    height: 120vh;
+                    z-index: 999;
+                    will-change: opacity;
+                    opacity: 0.5;
+                    background-color: black;
+                }
+            }
+            #content {                
+                    height: 62.1vh;               
+                .quickPeriodicity {
+                    margin-bottom: 0px;  
+                    .dataDropdown {
+                        .col.input-field{
+                            margin-top:0!important;
+                            width:100%;
+                            .select-wrapper{
+                                input.select-dropdown{
+                                    margin: 0 0 0px 0!important;
+                                }
+                            } 
+                        }
+                        span {
+                            font-size: 13px;
+                            padding-left: .8rem;
+                        }
+                    }
+                }
+                .container {}
+                
+            }
+            aside#right-sidebar-nav{
+                span{
+                    .rightNavIcon{ position: fixed;
+                    top: 20px;
+                    right: 5px;
+                    z-index: 997;
+                    color: $primary-color-dark!important;
+                    }
+                    ul.side-nav{ width: 350px; }
+                }
+               
+            }
+        }
+    }
+    .loginContainer{
+        .validate{
+            margin-left: 48px;
+            float: left;
+            width: 100%;
+            position: relative;         
+            color: $error-color;
+        }
+        .input-field .prefix ~ input{
+            margin-left: 3rem!important;
+        }
+    } 
+    footer {}
+}

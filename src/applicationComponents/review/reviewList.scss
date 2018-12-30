@@ -1,0 +1,96 @@
+.reviewContainer {
+    width: 90%;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    margin: 0.5rem 0 1rem 0;
+    // position: fixed;
+    overflow-y: initial;
+    margin-left: 20px;
+    padding: 10px;
+    span {
+        margin-right: 44px;
+    }
+    .userRatingImg {
+        background-color: #4aaaff;
+        padding: 2px 0px 2px 3px;
+        border-radius: 4px;
+        color: #fff;
+        img {
+            left: 8px !important; 
+        }
+    }
+    .tatvamRaiting {
+        padding: 2px 0px 2px 7px;
+        border-radius: 4px;
+        color: #fff;
+        img {
+            left: 8px !important; 
+        }
+    }
+    .tRatingImg1 {
+        background-color: #f34443;
+    }
+    .tRatingImg2 {
+        background-color: #de5804;
+    }
+    .tRatingImg3 {
+        background-color: #dbb006;
+    }
+    .tRatingImg4 {
+        background-color: #2dac07;
+    }
+    .tRatingImg5 {
+        background-color: #196004;
+    }
+    .sourceImgBlock {
+        display: inline-block;
+        vertical-align: text-top;
+        margin-right: 55px;
+        width: 5%;
+    }
+    .userDetailBlock {
+        display: inline-block;
+        vertical-align: text-top;
+        margin-right: 55px;
+        width: 85%;
+        img {
+            position: relative;
+            top: 10px;
+            left: -9px;
+            width:32px;
+            height: 32px;
+        
+        }
+    }
+}
+.contentSection {
+    position: inherit !important;
+    overflow-y: initial !important;
+}
+.dimension {
+    padding: 5px 0px 5px 0px;
+    border: 1px solid #196004;
+    width: 88px;
+    text-align: center;
+    border-radius: 4px;
+    display: inline-block;
+    margin-left: 6px;
+
+}
+.rating5 {
+    border: 1px solid #196004 ;
+}
+.rating4 {
+    border: 1px solid #2dac07;
+}
+.rating3 {
+    border: 1px solid #dbb006 ;
+}
+.rating2 {
+    border: 1px solid #de5804 ;
+}
+.rating1 {
+    border: 1px solid #f34443 ;
+}
+.commentBorder {
+    border-bottom: 1px solid #d2d0d0;
+}

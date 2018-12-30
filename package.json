@@ -1,0 +1,69 @@
+{
+  "name": "tatvam3.0",
+  "version": "0.1.0",
+  "main": "src/index.js",
+  "scripts": {
+    "prod": "cross-env process.env.NODE_ENV='\"prod\"' webpack -p",
+    "dev": "cross-env process.env.NODE_ENV='\"dev\"' webpack --display-entrypoints",
+    "start": "npm run dev &&  cross-env process.env.NODE_ENV='\"dev\"' webpack-dev-server",
+    "prod-start": "npm run prod &&  cross-env process.env.NODE_ENV='\"prod\"' webpack -p",
+    "eslint": "eslint --ext .jsx --ext .js src/ --fix",
+    "test": "jest --colors",
+    "test-update": "jest --updateSnapshot --colors"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.2.3",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "copy-webpack-plugin": "^4.2.3",
+    "css-loader": "^1.0.1",
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
+    "file-loader": "^2.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "jest": "^23.6.0",
+    "material-icons": "^0.2.3",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "url-loader": "^1.1.2",
+    "webpack": "^3.8.1",
+    "webpack-dev-server": "^2.9.1",
+    "webpack-merge": "^4.1.2"
+  },
+  "dependencies": {
+    "cross-env": "^5.2.0",
+    "dotenv": "^6.1.0",
+    "es6-promise": "^4.2.5",
+    "jquery": "^2.1.1",
+    "materialize-css": "^0.100.2",
+    "materialize-sass": "^0.98.2",
+    "prop-types": "^15.6.2",
+    "react": "^16.0.0",
+    "react-dom": "^16.4.0",
+    "react-dropdown-tree-select": "^1.14.0",
+    "react-materialize": "^2.5.0",
+    "react-plotly.js": "^2.2.0",
+    "react-redux": "^5.0.6",
+    "react-router-dom": "^4.2.2",
+    "redux": "^3.7.2",
+    "redux-form": "^7.4.2",
+    "redux-persist": "^5.10.0",
+    "redux-thunk": "^2.2.0"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "^appConstants$": "<rootDir>/src/constants/appConstants",
+      "^actionTypes$": "<rootDir>/src/constants/actionTypes"
+    },
+    "collectCoverage": false,
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx}"
+    ]
+  }
+}
